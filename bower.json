@@ -1,0 +1,19 @@
+{
+  "name": "mana-o",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ktanigawa/mana-o",
+  "authors": [
+    "Karen Tanigawa <tanigawa.karen@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~1.11.6"
+  }
+}
