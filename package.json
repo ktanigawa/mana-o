@@ -1,0 +1,19 @@
+{
+  "name": "mana-o",
+  "version": "1.0.0",
+  "description": "A meaningful app that teaches the subtle differences in the translation of Hawaiian words",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktanigawa/mana-o.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktanigawa/mana-o/issues"
+  },
+  "homepage": "https://github.com/ktanigawa/mana-o"
+}
