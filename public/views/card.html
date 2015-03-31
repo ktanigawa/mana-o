@@ -1,20 +1,14 @@
- <div class="ui card">
+
+<div class="question">
+  <h2>{{card.meaning}}</h2>
+</div>
+
+ <div class="ui card" ng-repeat="option in card.options">
     <div class="content">
-      <div class="header">AHI</div>
-      <div class="meta">2 days ago</div>
+      <div class="header">{{ option.title }}</div>
+      <div class="meta"></div>
       <div class="description">
-        <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-        <p>Many people also have their own barometers for what makes a cute dog.</p>
-      </div>
-    </div>
-  </div>
-  <div class="ui card">
-    <div class="content">
-      <div class="header">AHI</div>
-      <div class="meta">2 days ago</div>
-      <div class="description">
-        <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-        <p>Many people also have their own barometers for what makes a cute dog.</p>
+        {{ option.definition }}
       </div>
     </div>
   </div>

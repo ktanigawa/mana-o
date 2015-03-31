@@ -17,4 +17,5 @@ body {
   height: 75px; }
 
 a.start_button, a.index_button {
-  color: #FFF152; }
+  color: #FFF152;
+  text-transform: uppercase; }
