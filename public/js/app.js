@@ -535,7 +535,21 @@ angular
           definition : "to splash, spatter, squirt, spurt"
         }
       ]
+    },
+    {
+      name : "ola",
+      options : [
+        {
+          title : "ola",
+          definition : "life, health, well-being, living"
+        },        
+        {
+          title : "ʻolā",
+          definition : "gurgling, to gurgle"
+        }
+      ]
     }
+
     ];
   }) 
   ;
