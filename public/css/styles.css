@@ -1,2 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700.css);
 body {
-  background-color: blue; }
+  background-color: white;
+  color: #050912; }
+
+.logo {
+  color: #FFF152;
+  font-family: 'Roboto Condensed', sans-serif, 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  border: solid 3px #FFF152;
+  width: 200px;
+  height: 50px; }
+
+.navbar {
+  height: 75px; }
+
+a.start_button, a.index_button {
+  color: #FFF152; }
