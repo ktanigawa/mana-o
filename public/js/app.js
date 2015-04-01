@@ -20,7 +20,7 @@ angular
       templateUrl : "views/list_all.html",
     });
   }])
-  .controller('CardController', ['$scope','$state','CardService', function($scope,$state,CardService){
+  .controller('CardController', ['$scope','$state','$timeout','CardService', function($scope,$state,$timeout,CardService){
     // have cards
     // choose one at random
     // display cards
@@ -65,6 +65,11 @@ angular
       }
       // show all descriptions
       $scope.showAnswers = true;
+      // show the next button
+      // show after 3 seconds
+      $timeout(function () {
+        $scope.showNextButton = true;
+      },3000); //delay in ms
     };
 
   }])
