@@ -53,6 +53,8 @@ angular
       }
       else{
         angular.element($event.currentTarget).addClass("incorrect");
+        // also highlight the correct choice
+        
       }
       // show all descriptions
       $scope.showAnswers = true;
