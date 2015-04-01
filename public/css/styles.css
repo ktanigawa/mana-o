@@ -17,16 +17,13 @@ body {
   margin-bottom: 20px; }
 
 .navbar {
-  height: 75px; }
+  height: 50px; }
 
 .ui.inverted.menu .header.item {
   background: none; }
 
 .find_button {
   margin-bottom: 20px; }
-
-.next_button_box {
-  margin: auto; }
 
 #next_button {
   margin-top: 20px;
@@ -42,6 +39,36 @@ body {
 #start_button {
   height: 75px;
   width: 350px;
+  margin: auto; }
+
+.definition_box {
+  width: 375px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px; }
+
+.choose_box {
+  width: 375px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px; }
+
+#question_box {
+  width: 375px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 15px; }
+
+#cards_box {
+  width: 375px;
+  height: auto;
+  margin: auto; }
+
+.next_button_box {
+  width: 375px;
+  height: 50px; }
+
+#next_button_container {
   margin: auto; }
 
 .question h2 {

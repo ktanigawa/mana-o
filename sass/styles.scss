@@ -22,7 +22,7 @@ body{
 }
 
 .navbar{
-  height: 75px;
+  height: 50px;
 }
 
 .ui.inverted.menu .header.item {
@@ -38,10 +38,6 @@ body{
 
 .find_button{
   margin-bottom: 20px;
-}
-
-.next_button_box{
-  margin: auto;
 }
 
 #next_button{
@@ -63,8 +59,43 @@ body{
   margin: auto;
 }
 
+.definition_box{
+  width: 375px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
+.choose_box{
+  width: 375px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
+#question_box{
+  width: 375px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 15px;
+  // background-color: #555;
+}
+
+#cards_box{
+  width: 375px;
+  height: auto;
+  // background-color: red;
+  margin: auto;
+}
+
+.next_button_box{
+  width: 375px;
+  height: 50px;
+}
+
+#next_button_container{
+  margin: auto;
+}
 .question h2{
   font-family: 'Roboto Condensed', sans-serif, 400;
   font-size: 1.6em;
