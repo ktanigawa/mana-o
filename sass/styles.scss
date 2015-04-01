@@ -18,6 +18,7 @@ body{
   width: 200px;
   height: 50px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .navbar{
@@ -28,21 +29,31 @@ body{
   background: none;
 }
 
-a.start_button button,
-a.index_button button{
-  color: $yellow;
-  text-transform: uppercase;
-  font-size: 700;
+// a.start_button button,
+// a.index_button button{
+//   color: $yellow;
+//   text-transform: uppercase;
+//   font-size: 700;
+// }
+
+.find_button{
+  margin-bottom: 20px;
 }
 
 #index_button{
   margin-top: 10px;
   height: 75px;
+  width: 350px;
+  margin: auto;
 }
 
 #start_button{
   height: 75px;
+  width: 350px;
+  margin: auto;
 }
+
+
 
 .question h2{
   font-family: 'Roboto Condensed', sans-serif, 400;
@@ -56,13 +67,15 @@ a.index_button button{
 }
 
 .ui.card.correct{
-  background-color: green;
+  background-color: #6AC84C;
 }
 
 .ui.card.incorrect{
-  background-color: red;
+  background-color: #C53032;
 }
 
 .description{
   font-size: 20px;
 }
+
+

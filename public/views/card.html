@@ -1,16 +1,25 @@
-
-<div class="question">
-  <h2>{{card.meaning}}</h2>
+<div class="ui grid">
+  <div class="one wide column"></div>
+  <div class="thirteen wide column">
+    <div class="question">
+      <h2>{{card.meaning}}</h2>
+    </div>
+  </div>
 </div>
 
-<div class="ui list">
-  <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options">
-    <div class="content">
-      <div class="header">{{ option.title }}</div>
-      <div class="meta"></div>
-      <div class="description" ng-show="showAnswers">
-        {{ option.definition }}
-      </div>
+<div class="ui grid">
+  <div class="one wide column"></div>
+  <div class="thirteen wide column">
+    <div class="ui list">
+      <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options">
+        <div class="content">
+          <div class="header">{{ option.title }}</div>
+          <div class="meta"></div>
+          <div class="description" ng-show="showAnswers">
+            {{ option.definition }}
+          </div>
+        </div>
+      </div> 
     </div>
-  </div> 
+  </div>
 </div>
