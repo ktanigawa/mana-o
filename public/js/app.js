@@ -548,8 +548,309 @@ angular
           definition : "gurgling, to gurgle"
         }
       ]
+    },
+    {
+      name : "hoola",
+      options : [
+        {
+          title : "hoʻōla",
+          definition : "Small piece of tapa"
+        },        
+        {
+          title : "hoʻolā",
+          definition : "sun"
+        }
+      ]
+    },
+    {
+      name : "pau",
+      options : [
+        {
+          title : "pau",
+          definition : "finished, all done"
+        },        
+        {
+          title : "paʻu",
+          definition : "tedious and laborious work"
+        },
+        {
+          title : "pāʻū",
+          definition : "red feathers bound to base of yellow feathers in an ʻuo, bunch."
+        }
+      ]
+    },
+    {
+      name : "ue",
+      options : [
+        {
+          title : "ue",
+          definition : "to jerk, pull, twist, pry, turn, sway"
+        },        
+        {
+          title : "uē",
+          definition : "to cry, weep, lament, mourn"
+        }
+      ]
+    },
+    {
+      name : "pipi",
+      options : [
+        {
+          title : "pipī",
+          definition : "twinkling, as stars"
+        },        
+        {
+          title : "pipi",
+          definition : "hawaiian pearl oyster"
+        },
+        {
+          title : "pīpī",
+          definition : "stingy"
+        }
+      ]
+    },
+    {
+      name : "wai",
+      options : [
+        {
+          title : "waʻi",
+          definition : "to break, end"
+        },        
+        {
+          title : "wai",
+          definition : "water"
+        }
+      ]
+    },
+    {
+      name : "lua",
+      options : [
+        {
+          title : "luʻa",
+          definition : "old and wrinkled, worn and shabby with use, worn-out"
+        },        
+        {
+          title : "lua",
+          definition : "toilet, outhouse, bathroom, cellar"
+        }
+      ]
+    },
+    {
+      name : "kaa",
+      options : [
+        {
+          title : "kaʻā",
+          definition : "thread, line; snell of a fishline"
+        },        
+        {
+          title : "kaʻa",
+          definition : "to roll, turn, twist, wallow, wind, braid, revolve"
+        }
+      ]
+    },
+    {
+      name : "kai",
+      options : [
+        {
+          title : "kai",
+          definition : "sea, sea water"
+        },        
+        {
+          title : "kaʻi",
+          definition : "fish net or seine"
+        }
+      ]
+    },
+    {
+      name : "koa",
+      options : [
+        {
+          title : "koa",
+          definition : "brave, bold, fearless"
+        },        
+        {
+          title : "koʻa",
+          definition : "shrine, often consisting of circular piles of coral or stone, built along the shore or by ponds or streams, used in ceremonies as to make fish multiply"
+        },
+        {
+          title : "kōʻā",
+          definition : "arid, barren, rocky and unfruitful"
+        }
+      ]
+    },
+    {
+      name : "alo",
+      options : [
+        {
+          title : "alo",
+          definition : "upper surface, as of a bowl; leeward"
+        },        
+        {
+          title : "ʻalo",
+          definition : "to dodge, evade, elude, avoid."
+        }
+      ]
+    },
+    {
+      name : "maemae",
+      options : [
+        {
+          title : "maemae",
+          definition : "damp, as clothes suitable for ironing"
+        },        
+        {
+          title : "maʻemaʻe",
+          definition : "cleanliness, purity"
+        }
+      ]
+    },
+    {
+      name : "olu",
+      options : [
+        {
+          title : "ʻolu",
+          definition : "cool, refreshing"
+        },        
+        {
+          title : "ʻōlū",
+          definition : "soft-shelled, as of a crab or lobster"
+        }
+      ]
+    },
+    {
+      name : "aho",
+      options : [
+        {
+          title : "ʻaho",
+          definition : "thatch purlin"
+        },        
+        {
+          title : "aho",
+          definition : "line, cord, lashing, fishing line, kite string"
+        }
+      ]
+    },
+    {
+      name : "poke",
+      options : [
+        {
+          title : "poke",
+          definition : "section, slice, piece"
+        },        
+        {
+          title : "pōkē",
+          definition : "to make a bouquet"
+        }
+      ]
+    },
+    {
+      name : "ula",
+      options : [
+        {
+          title : "ula",
+          definition : "a flame"
+        },        
+        {
+          title : "ʻula",
+          definition : "red, scarlet"
+        }
+      ]
+    },
+    {
+      name : "papa",
+      options : [
+        {
+          title : "papā",
+          definition : "to blow, as the wind"
+        },        
+        {
+          title : "papa",
+          definition : "a variety of kava"
+        },
+        {
+          title : "pāpā",
+          definition : "to forbid, prohibit, taboo"
+        }
+      ]
+    },
+    {
+      name : "pua",
+      options : [
+        {
+          title : "pua",
+          definition : "to bloom, blossom"
+        },        
+        {
+          title : "pūʻā",
+          definition : "flock, herd, drove"
+        }
+      ]
+    },
+    {
+      name : "ao",
+      options : [
+        {
+          title : "ʻaʻo",
+          definition : "Newell's puffin or shearwater, the only sea bird endemic to Hawaiʻi, and to breed only in Hawaiʻi"
+        },        
+        {
+          title : "aʻo",
+          definition : "instruction, teaching, doctrine, learning, instruction book, manual, advice, counsel"
+        },
+        {
+          title : "ao",
+          definition : "light, day, daylight, dawn"
+        }
+      ]
+    },
+    {
+      name : "ika",
+      options : [
+        {
+          title : "īkā",
+          definition : "to float, strike, drift"
+        },        
+        {
+          title : "ika",
+          definition : "strong"
+        }
+      ]
+    },
+    {
+      name : "manao",
+      options : [
+        {
+          title : "manaʻo",
+          definition : "thought, idea, belief, opinion, theory, thesis, intention, meaning, suggestion, mind, desire, want"
+        }
+      ]
+    },
+    {
+      name : "loi",
+      options : [
+        {
+          title : "loi",
+          definition : "to look over critically; to look at as through searching for flaws, scrutinize."
+        },
+        {
+          title : "loʻi",
+          definition : "irrigated terrace, especially for taro, but also for rice; paddy"
+        }
+      ]
+    },
+    {
+      name : "ohia",
+      options : [
+        {
+          title : "ʻohia",
+          definition : "ʻOhia mai ā pau pono nā ʻike kumu o Hawaiʻi (chant for Ka-lā-kaua), gather up every bit of the basic knowledge of Hawaiʻi."
+        },
+        {
+          title : "ʻōhiʻa",
+          definition : "a red birthmark, said to be caused by the pregnant mother's longing for mountain apples (ʻohiʻa ʻai) and eating them."
+        }
+      ]
     }
-
     ];
   }) 
   ;
