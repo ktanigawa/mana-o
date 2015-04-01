@@ -99,13 +99,24 @@ body{
 .next_button_box{
   margin-top: 20px;
 }
-// #next_button_container{
-//   width: 375px;
-//   height: 50px;
-// }
+
 .question h2{
   font-family: 'Roboto Condensed', sans-serif, 400;
   font-size: 1.6em;
+}
+
+.ui.top.attached.label{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #666666;
+  text-shadow: 0 1px 2px #FFF;
+  background-color: #C4C4C4;
+}
+
+// need to fix the padding-bottom when cards closed
+.ui.top.attached.label:first-child+:not(.attached) {
+  margin-top: 3rem!important;
 }
 
 .ui.card>.content>.header:not(.ui){
@@ -114,12 +125,19 @@ body{
   font-size: 1.4em;
 }
 
+// want to use checkmark don't know how
+// .ui.top.attached.label.correct{
+//   width: 10px;
+//   height: 10px;
+//   background-image: url("https://cdn2.iconfinder.com/data/icons/flaticons-solid/16/checkmark-2-512.png");
+// }
+
 .ui.card.correct{
-  background-color: #369E6B;
+  background-color: #72C29B;
 }
 
 .ui.card.incorrect{
-  background-color: #F94C12;
+  background-color: #EE403D;
 }
 
 .description{
