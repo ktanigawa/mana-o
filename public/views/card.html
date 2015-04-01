@@ -7,8 +7,10 @@
 <div class="choose_box">
   <h3>choose the correct mana'o (meaning):</h3>
 </div>
+  
+
 <div class="ui list" id="cards_box">
-  <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options">
+  <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options" id="cards">
     <div class="content">
       <div class="header">{{ option.title }}</div>
       <div class="meta"></div>
@@ -20,10 +22,10 @@
 </div> 
 
 
-<div class="next_button_box" ng-show="showNextButton" id="next_button_container">
+<div class="next_button_box" ng-show="showNextButton">
  <a class="next_button" ui-sref="card({name:''})">
     <button class="fluid ui button" tabindex="0" id="next_button">
-      Next
+      next mana'o
     </button>
   </a>
 </div>
