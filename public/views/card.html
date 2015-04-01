@@ -3,17 +3,16 @@
   <h2>{{card.meaning}}</h2>
 </div>
 
-<div ng-click="showAnswers = true">
-  Show Answers
-</div>
-
-<div ng-click="showAnswers = false">
-  Hide Answers
-</div>
-
-<h2 ng-show="showAnswers">The secret answers</h2>
-
- <div class="ui card" ng-repeat="option in card.options">
+ <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options">
+    <div class="content">
+      <div class="header">{{ option.title }}</div>
+      <div class="meta"></div>
+      <div class="description" ng-show="showAnswers">
+        {{ option.definition }}
+      </div>
+    </div>
+  </div>
+<!--  <div class="ui card" ng-repeat="option in card.options">
     <div class="content">
       <div class="header">{{ option.title }}</div>
       <div class="meta"></div>
@@ -21,4 +20,4 @@
         {{ option.definition }}
       </div>
     </div>
-  </div>
+  </div> -->

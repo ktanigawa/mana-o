@@ -44,6 +44,20 @@ angular
 
     }
 
+    $scope.userSelectsOption = function ($event, userChoice){
+      console.log('userChoice',userChoice);
+      // add a class if the option was correct or incorrect
+      if(userChoice.correct){
+        // add a class to user choice
+        angular.element($event.currentTarget).addClass("correct");
+      }
+      else{
+        angular.element($event.currentTarget).addClass("incorrect");
+      }
+      // show all descriptions
+      $scope.showAnswers = true;
+    };
+
   }])
   .service('CardService', function(){
     // get all cards

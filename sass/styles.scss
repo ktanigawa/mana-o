@@ -5,6 +5,7 @@ $yellow: #FFF152;
 body{
   background-color: white;
   color: $black;
+  font-family: 'Roboto Condensed', sans-serif, 400;
 }
 
 .logo{
@@ -26,4 +27,22 @@ a.start_button,
 a.index_button{
   color: $yellow;
   text-transform: uppercase;
+  font-size: 700;
+  height: 200px;
+}
+
+#index_button{
+  margin-top: 10px;
+}
+
+#home_button{
+  letter-spacing: 1px;
+}
+
+.correct{
+  background-color: green !important;
+}
+
+.incorrect{
+  background-color: red !important;
 }
