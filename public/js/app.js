@@ -55,6 +55,13 @@ angular
         angular.element($event.currentTarget).addClass("incorrect");
         // also highlight the correct choice
         
+        // loop through options to find the correct option
+        for (var i = 0; i < $scope.card.options.length; i++){
+          if( $scope.card.options[i].correct ){
+            // adds class to the correct option
+            angular.element( angular.element($event.currentTarget).parent().children()[i] ).addClass("correct");
+          }
+        }
       }
       // show all descriptions
       $scope.showAnswers = true;
