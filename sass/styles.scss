@@ -29,12 +29,9 @@ body{
   background: none;
 }
 
-// a.start_button button,
-// a.index_button button{
-//   color: $yellow;
-//   text-transform: uppercase;
-//   font-size: 700;
-// }
+h3{
+  font-family: 'Roboto Condensed', sans-serif, 400;
+}
 
 .find_button{
   margin-bottom: 20px;
@@ -45,27 +42,59 @@ body{
   height: 75px;
   width: 350px;
   margin: auto;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 #start_button{
   height: 75px;
   width: 350px;
   margin: auto;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .definition_box{
   width: 375px;
   height: auto;
   margin: auto;
+  margin-top: 10px; 
   margin-bottom: 10px;
+  background-color: #E5FCC2;
+  padding: 5px;
+}
+
+.manao{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.meaning{
+  text-transform: uppercase;
 }
 
 .choose_box{
   width: 375px;
   height: auto;
   margin: auto;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+  padding: 5px;
+  background-color: #547980;
 }
+
+.word{
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.olelo{
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+}
+
 
 #question_box{
   width: 375px;
@@ -93,7 +122,13 @@ body{
   height: 50px;
   width: 375px;
   margin: auto;
-  background-color: blue;
+  letter-spacing: 1px;
+  background-color: #45ADA8;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 2px #547980;
 }
 
 .next_button_box{
@@ -132,8 +167,13 @@ body{
 //   background-image: url("https://cdn2.iconfinder.com/data/icons/flaticons-solid/16/checkmark-2-512.png");
 // }
 
+.ui.card{
+  box-shadow: none;
+  background-color: #333;
+}
+
 .ui.card.correct{
-  background-color: #72C29B;
+  background-color: #9DE0AD;
 }
 
 .ui.card.incorrect{
