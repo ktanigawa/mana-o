@@ -61,7 +61,7 @@ h3{
   height: auto;
   margin: auto;
   margin-top: 10px; 
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -70,6 +70,7 @@ h3{
   height: auto;
   border: solid 1px #d4d4d5;
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: .2857rem;
   box-shadow: 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5;
@@ -86,11 +87,11 @@ h3{
 }
 
 .meaning{
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   color: #555555;
   text-align: center;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 
 .choose_box{
@@ -103,7 +104,7 @@ h3{
 }
 
 .word{
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   color: #555555;
   letter-spacing: .5px;
@@ -120,7 +121,7 @@ h3{
 
 
 #question_box{
-  width: 375px;
+  width: 360px;
   height: auto;
   margin: auto;
   margin-bottom: 20px;
@@ -160,8 +161,6 @@ h3{
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  margin-left: 20px;
-  margin-right: 10px;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
