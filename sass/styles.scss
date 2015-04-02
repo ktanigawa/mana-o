@@ -62,19 +62,35 @@ h3{
   margin: auto;
   margin-top: 10px; 
   margin-bottom: 10px;
-  background-color: #E5FCC2;
   padding: 10px;
+}
+
+.question_container{
+  width: 375px;
+  height: auto;
+  border: solid 1px #d4d4d5;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: .2857rem;
+  box-shadow: 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5;
+  -webkit-transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease;
 }
 
 .manao{
   font-weight: 700;
   font-size: 24px;
+  letter-spacing: .5px;
+  text-align: center;
+  color: #45ADA8;
 }
 
 .meaning{
   font-weight: 700;
   font-size: 16px;
   color: #555555;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .choose_box{
@@ -87,16 +103,19 @@ h3{
 }
 
 .word{
-  text-transform: uppercase;
-  color: #000000;
-  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  letter-spacing: .5px;
+  text-align: center;
 }
 
 .olelo{
   font-weight: 700;
   font-size: 18px;
-  color: #000000;
-  letter-spacing: 1px;
+  color: #45ADA8;
+  letter-spacing: .5px;
+  text-align: center;
 }
 
 
@@ -104,7 +123,7 @@ h3{
   width: 375px;
   height: auto;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #cards_box{
@@ -141,7 +160,11 @@ h3{
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .ui.top.attached.label{
@@ -173,14 +196,18 @@ h3{
 
 .ui.card.correct{
   background-color: #9DE0AD;
-  background-image: url("https://cdn2.iconfinder.com/data/icons/flaticons-solid/16/checkmark-2-512.png");
+  background-image: url(/images/greencheck.png);
   background-size: 30px auto;
   background-repeat: no-repeat;
-  background-position: 335px 7px;
+  background-position: 340px 5px;
 }
 
 .ui.card.incorrect{
   background-color: #EE403D;
+  background-image: url(/images/redx.png);
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: 340px 8px;
 }
 
 .description{
