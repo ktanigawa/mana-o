@@ -14,7 +14,8 @@ body {
   width: 200px;
   height: 50px;
   margin: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 .navbar {
   height: 50px; }
@@ -30,18 +31,19 @@ h3 {
 
 #index_button {
   margin-top: 10px;
-  height: 75px;
+  height: 40px;
   width: 350px;
   margin: auto;
   text-transform: uppercase;
   font-weight: 700; }
 
 #start_button {
-  height: 75px;
+  height: 40px;
   width: 350px;
   margin: auto;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 400;
+  background-color: #FFF152; }
 
 .definition_box {
   width: 375px;
@@ -50,38 +52,41 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #E5FCC2;
-  padding: 5px; }
+  padding: 10px; }
 
 .manao {
   font-weight: 700;
-  font-size: 18px; }
+  font-size: 24px; }
 
 .meaning {
-  text-transform: uppercase; }
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555; }
 
 .choose_box {
   width: 375px;
   height: auto;
   margin: auto;
-  padding: 5px;
-  background-color: #547980; }
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #45ADA8; }
 
 .word {
   text-transform: uppercase;
-  color: white;
+  color: #000000;
   letter-spacing: 1px; }
 
 .olelo {
   font-weight: 700;
   font-size: 18px;
-  color: white;
+  color: #000000;
   letter-spacing: 1px; }
 
 #question_box {
   width: 375px;
   height: auto;
   margin: auto;
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
 
 #cards_box {
   width: 375px;
@@ -103,21 +108,22 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   color: white;
-  text-shadow: 0 1px 2px #547980; }
+  text-shadow: 0 1px 2px #594F4F; }
 
 .next_button_box {
   margin-top: 20px; }
 
 .question h2 {
-  font-family: 'Roboto Condensed', sans-serif, 400;
-  font-size: 1.6em; }
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-left: 10px; }
 
 .ui.top.attached.label {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #666666;
-  text-shadow: 0 1px 2px #FFF;
+  text-shadow: 0 1px 2px #FFFFFF;
   background-color: #C4C4C4; }
 
 .ui.top.attached.label:first-child + :not(.attached) {
@@ -128,12 +134,15 @@ h3 {
   font-weight: 400;
   font-size: 1.4em; }
 
-.ui.card {
-  box-shadow: none;
-  background-color: #333; }
+.ui.card > .content > .meta + .description {
+  margin-top: 0; }
 
 .ui.card.correct {
-  background-color: #9DE0AD; }
+  background-color: #9DE0AD;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/flaticons-solid/16/checkmark-2-512.png");
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: 335px 7px; }
 
 .ui.card.incorrect {
   background-color: #EE403D; }

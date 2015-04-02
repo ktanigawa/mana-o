@@ -1,22 +1,20 @@
 <div class="definition_box">
-  <span class="manao">manaʻo</span>
-  <span class="meaning">meaning:</span>
+  <div class="manao">manaʻo</div>
+  <div class="meaning">meaning</div>
 </div>
 <div class="question" id="question_box">
   <h2>{{card.meaning}}</h2>
 </div>
 <div class="choose_box">
-  <span class="olelo">choose the correct ʻōlelo</span>
-  <span class="word">word:</span>
+  <div class="olelo">ʻŌlelo, he aha</div>
+  <div class="word">What is the correct Hawaiian word?</div>
 </div>
   
 
 <div class="ui list" id="cards_box">
   <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options" id="cards">
     <div class="content">
-      <div class="ui top attached label">
         <div class="header">{{ option.title }}</div>
-      </div>
         <div class="meta"></div>
         <div class="description" ng-show="showAnswers">
           {{ option.definition }}
