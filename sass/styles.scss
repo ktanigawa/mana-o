@@ -44,7 +44,7 @@ h3{
   width: 350px;
   margin: auto;
   text-transform: uppercase;
-  font-weight: 700;
+  background-color: #45ADA8;
 }
 
 #start_button{
@@ -52,8 +52,7 @@ h3{
   width: 350px;
   margin: auto;
   text-transform: uppercase;
-  font-weight: 400;
-  background-color: #FFF152;
+  background-color: #45ADA8;
 }
 
 .definition_box{
@@ -61,8 +60,7 @@ h3{
   height: auto;
   margin: auto;
   margin-top: 10px; 
-  // margin-bottom: 10px;
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .question_container{
@@ -105,15 +103,14 @@ h3{
 
 .word{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   color: #555555;
   letter-spacing: .5px;
   text-align: center;
 }
 
 .olelo{
-  font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   color: #45ADA8;
   letter-spacing: .5px;
   text-align: center;
@@ -164,6 +161,8 @@ h3{
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 15px;
+  letter-spacing: 1.5px;
 }
 
 .ui.top.attached.label{

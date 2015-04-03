@@ -35,22 +35,21 @@ h3 {
   width: 350px;
   margin: auto;
   text-transform: uppercase;
-  font-weight: 700; }
+  background-color: #45ADA8; }
 
 #start_button {
   height: 40px;
   width: 350px;
   margin: auto;
   text-transform: uppercase;
-  font-weight: 400;
-  background-color: #FFF152; }
+  background-color: #45ADA8; }
 
 .definition_box {
   width: 375px;
   height: auto;
   margin: auto;
   margin-top: 10px;
-  padding: 10px; }
+  padding-top: 10px; }
 
 .question_container {
   width: 375px;
@@ -87,14 +86,13 @@ h3 {
 
 .word {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   color: #555555;
   letter-spacing: .5px;
   text-align: center; }
 
 .olelo {
-  font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   color: #45ADA8;
   letter-spacing: .5px;
   text-align: center; }
@@ -136,7 +134,9 @@ h3 {
   font-size: 1.5em;
   color: #000000;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 1.5px; }
 
 .ui.top.attached.label {
   font-size: 18px;

@@ -865,19 +865,6 @@ angular
           definition : "irrigated terrace, especially for taro, but also for rice; paddy"
         }
       ]
-    },
-    {
-      name : "ohia",
-      options : [
-        {
-          title : "ʻohia",
-          definition : "ʻOhia mai ā pau pono nā ʻike kumu o Hawaiʻi (chant for Ka-lā-kaua), gather up every bit of the basic knowledge of Hawaiʻi."
-        },
-        {
-          title : "ʻōhiʻa",
-          definition : "a red birthmark, said to be caused by the pregnant mother's longing for mountain apples (ʻohiʻa ʻai) and eating them."
-        }
-      ]
     }
     ];
   }) 
