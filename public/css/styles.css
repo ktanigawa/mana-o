@@ -37,6 +37,14 @@ nav {
 h3 {
   font-family: 'Roboto Condensed', sans-serif, 400; }
 
+#search_box_container {
+  width: 350px;
+  margin: auto;
+  display: block; }
+
+#search_box {
+  width: 100%; }
+
 .find_button {
   margin-bottom: 20px; }
 

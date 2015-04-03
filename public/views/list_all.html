@@ -1,4 +1,12 @@
-<div ng-repeat="definition in definitions">
+
+<div class="ui inverted segment">
+  <div class="ui fluid icon input" id="search_box_container">
+    <input type="text" id="search_box" ng-model="search_query" placeholder="find meaning...">
+    <i class="search icon"></i>
+  </div>
+</div>
+
+<div ng-repeat="definition in definitions | filter : search_query">
   <div ng-repeat="word in definition.options">
     <div class="ui card" id="card_index">
       <div class="content">
@@ -8,4 +16,4 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
