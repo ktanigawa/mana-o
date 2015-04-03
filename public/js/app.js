@@ -18,6 +18,7 @@ angular
     .state('list_all', {
       url : '/list_all',
       templateUrl : "views/list_all.html",
+      controller : "ListController"
     });
   }])
   .controller('CardController', ['$scope','$state','$timeout','CardService', function($scope,$state,$timeout,CardService){
@@ -41,7 +42,6 @@ angular
       var the_card = CardService.getCard( $state.params.name );
       $scope.card = CardService.prepareQuestion( the_card );
       console.log('$scope.card',$scope.card);
-
     }
 
     $scope.userSelectsOption = function ($event, userChoice){
@@ -71,7 +71,9 @@ angular
         $scope.showNextButton = true;
       },3000); //delay in ms
     };
-
+  }])
+  .controller('ListController', ['$scope','CardService', function($scope,CardService){
+    $scope.definitions = CardService.all();
   }])
   .service('CardService', function(){
     // get all cards
@@ -113,8 +115,6 @@ angular
       };
       // return didn't find card, so false
       return foundCard;
-
-
     }
 
     var all_cards = [
