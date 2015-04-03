@@ -6,29 +6,36 @@ body {
   font-family: 'Roboto Condensed', sans-serif, 400; }
 
 ul {
-  -webkit-margin-before: 0em; }
-
-a.home {
-  display: block;
-  color: white; }
+  -webkit-margin-before: 0em;
+  display: inline-block; }
 
 a.logo {
   color: #45ADA8;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 22px;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
   text-align: center;
   border: solid 3px #45ADA8;
   height: 45px;
-  margin: auto;
-  width: 317px;
+  width: 250px;
   padding: 5px;
-  display: block; }
+  display: block;
+  margin-top: 5px; }
+
+.logo_box {
+  height: auto;
+  margin: auto;
+  width: auto; }
 
 .navbar {
   height: 55px;
   width: 100%;
-  background-color: black; }
+  background-color: #000000;
+  margin-bottom: 20px; }
+
+#home_button {
+  margin: auto; }
 
 #home_button > ul li {
   display: inline-block; }
