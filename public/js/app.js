@@ -845,15 +845,6 @@ angular
       ]
     },
     {
-      name : "manao",
-      options : [
-        {
-          title : "manaʻo",
-          definition : "thought, idea, belief, opinion, theory, thesis, intention, meaning, suggestion, mind, desire, want"
-        }
-      ]
-    },
-    {
       name : "loi",
       options : [
         {
