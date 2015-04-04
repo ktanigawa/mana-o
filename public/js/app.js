@@ -1,6 +1,7 @@
 angular
   .module('manao', [
-    'ui.router'
+    'ui.router',
+    'ngAnimate'
   ])
   // https://github.com/angular-ui/ui-router/wiki
   .config(['$urlRouterProvider','$stateProvider',function($urlRouterProvider, $stateProvider) {
@@ -69,7 +70,7 @@ angular
       // show after 3 seconds
       $timeout(function () {
         $scope.showNextButton = true;
-      },3000); //delay in ms
+      },2000); //delay in ms
     };
   }])
   .controller('ListController', ['$scope','CardService', function($scope,CardService){

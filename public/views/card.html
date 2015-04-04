@@ -18,14 +18,14 @@
     <div class="content">
         <div class="header">{{ option.title }}</div>
         <div class="meta"></div>
-        <div class="description" ng-show="showAnswers">
+        <div class="description animate-show" ng-show="showAnswers">
           {{ option.definition }}
         </div>
     </div>
   </div>
 </div>
 
-<div class="next_button_box" ng-show="showNextButton">
+<div class="next_button_box animate-show" ng-show="showNextButton">
  <a class="next_button" ui-sref="card({name:''})">
     <button class="fluid ui animated button" tabindex="0" id="next_button">
       <div class="visible content">

@@ -109,7 +109,6 @@ input#search_box.ng-valid.ng-touched.ng-dirty.ng-valid-parse{
   height: auto;
   border: solid 1px #d4d4d5;
   margin: auto;
-  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: .2857rem;
   box-shadow: 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5;
@@ -201,7 +200,7 @@ input#search_box.ng-valid.ng-touched.ng-dirty.ng-valid-parse{
   text-transform: uppercase;
   text-align: center;
   margin-top: 15px;
-  letter-spacing: 1.5px;
+  letter-spacing: .5px;
 }
 
 .ui.top.attached.label{
@@ -237,7 +236,7 @@ input#search_box.ng-valid.ng-touched.ng-dirty.ng-valid-parse{
   background-image: url(/images/greencheck.png);
   background-size: 30px auto;
   background-repeat: no-repeat;
-  background-position: 340px 5px;
+  background-position: 313px 6px;
 }
 
 .ui.card.incorrect{
@@ -245,11 +244,64 @@ input#search_box.ng-valid.ng-touched.ng-dirty.ng-valid-parse{
   background-image: url(/images/redx.png);
   background-size: 30px auto;
   background-repeat: no-repeat;
-  background-position: 340px 8px;
+  background-position: 313px 8px;
 }
 
 .description{
   font-size: 20px;
 }
 
+/* Animations */
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+}
 
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:translate3d(-100px, 0, 0);
+  -moz-transform:translate3d(-100px, 0, 0);
+  transform:translate3d(-100px, 0, 0);
+}
+
+.animate-show{
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide{
+  line-height: 0px;
+  opacity: 0;
+  padding: 0px;
+}
+.animate-show.ng-show{
+  // line-height: 20px;
+  opacity: 1;
+  // padding: 10px;
+}
