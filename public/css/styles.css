@@ -251,4 +251,6 @@ input#search_box.ng-valid.ng-touched.ng-dirty.ng-valid-parse {
   padding: 0px; }
 
 .animate-show.ng-show {
-  opacity: 1; }
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px; }
