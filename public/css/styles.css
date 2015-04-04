@@ -43,16 +43,19 @@ nav {
 h3 {
   font-family: 'Roboto Condensed', sans-serif, 400; }
 
+#search_menu {
+  max-width: 290px;
+  margin: auto;
+  display: block;
+  margin-bottom: 5px; }
+
 #search_box_container {
   max-width: 320px;
   margin: auto;
   display: block; }
 
-input#search_box.ng-valid.ng-touched.ng-dirty.ng-valid-parse {
-  color: white; }
-
-#search_menu {
-  max-width: 290px;
+#score_container {
+  max-width: 350px;
   margin: auto;
   display: block;
   margin-bottom: 5px; }

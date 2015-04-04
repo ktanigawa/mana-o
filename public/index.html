@@ -2,7 +2,11 @@
 <html lang="en" ng-app="manao">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
   <title>manaʻo</title>
   <link rel="stylesheet" href="/bower_components/semantic-ui/manao/semantic.min.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
@@ -19,6 +23,12 @@
 <div class="menu">
   <nav>
     <ul>
+<!--       <li class="correct ui label right" id="score_correct">
+        {{total_correct}}
+      </li>
+      <li class="incorrect ui label right" id="score_incorrect">
+        {{total_incorrect}}
+      </li> -->
       <li id="logo_box">
         <a class="logo animate-show" ui-sref="title">manaʻo / meaning</a>
       </li>

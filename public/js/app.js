@@ -10,6 +10,19 @@ angular
     $stateProvider.state('title', {
       url: '',
       templateUrl : "views/title.html",
+      // controller : function($rootScope){
+      //   // set scores to zero
+      //   if(// ui sref-title is clicked){
+      //     //total_correct.reset();
+      //     //total_incorrect.reset();
+      //   }
+      // }
+      // controller : $('#title').click(function($rootScope){
+      //   $rootScope.total_correct = 0;
+      //   $rootScope.total_incorrect = 0;
+      // })
+
+
     })
     .state('card', {
       url : '/card/:name',
@@ -22,7 +35,14 @@ angular
       controller : "ListController"
     });
   }])
-  .controller('CardController', ['$scope','$state','$timeout','CardService', function($scope,$state,$timeout,CardService){
+  // sets the scope variables for score correct and incorrect
+  .run(function ($rootScope) {
+    $rootScope.total_correct = 0;
+    $rootScope.total_incorrect = 0;
+    $rootScope.answered = false;
+  })
+
+  .controller('CardController', ['$scope','$rootScope','$state','$timeout','CardService', function($scope,$rootScope,$state,$timeout,CardService){
     // have cards
     // choose one at random
     // display cards
@@ -36,6 +56,7 @@ angular
       var random_card = CardService.randomCard();
 
       $state.go( 'card', { name : random_card.name } );
+      $rootScope.answered = false;
     }
     // if it does exist, get that card
     else{
@@ -48,13 +69,20 @@ angular
     $scope.userSelectsOption = function ($event, userChoice){
       console.log('userChoice',userChoice);
       // add a class if the option was correct or incorrect
+      // if true or false value click first answer
+      if($rootScope.answered === true){
+        console.log("already answered");
+        return;
+      }
       if(userChoice.correct){
         // add a class to user choice
         angular.element($event.currentTarget).addClass("correct");
-      }
-      else{
+        $rootScope.answered = true;
+        $rootScope.total_correct++;
+      } else {
         angular.element($event.currentTarget).addClass("incorrect");
-        // also highlight the correct choice
+        $rootScope.answered = true;
+        $rootScope.total_incorrect++;
         
         // loop through options to find the correct option
         for (var i = 0; i < $scope.card.options.length; i++){
