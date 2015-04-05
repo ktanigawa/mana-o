@@ -1,4 +1,30 @@
-<div class="ui inverted segment" id="score_container">
+<div class="ui segment" id="score_container">
+  <ul>
+    <li>
+      <div class="correct_title">
+        <h5>correct</h5>
+      </div>
+    </li>
+    <li>
+      <div class="correct ui black label" id="score_correct">
+      {{total_correct}}
+      </div>
+    </li>
+    <li>
+      <div class="incorrect_title">
+        <h5>incorrect</h5>
+      </div>
+    </li>
+    <li>
+      <div class="incorrect ui black label" id="score_incorrect">
+        {{total_incorrect}}
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<!-- <div class="ui inverted segment" id="score_container">
   <div class="correct_title">
     <h4>correct</h4>
   </div>
@@ -11,7 +37,7 @@
   <div class="incorrect ui red circular label" id="score_incorrect">
     {{total_incorrect}}
   </div>
-</div>
+</div> -->
 
 
 <div class="question_container">

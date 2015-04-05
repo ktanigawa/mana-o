@@ -18,17 +18,11 @@
   <script type="text/javascript" src="/js/app.js"></script>
   <script type="text/javascript" src="/bower_components/angular-animate/angular-animate.min.js"></script>
 </head>
-<body>
+<body ng-cloak>
 
 <div class="menu">
   <nav>
     <ul>
-<!--       <li class="correct ui label right" id="score_correct">
-        {{total_correct}}
-      </li>
-      <li class="incorrect ui label right" id="score_incorrect">
-        {{total_incorrect}}
-      </li> -->
       <li id="logo_box">
         <a class="logo animate-show" ui-sref="title">manaʻo / meaning</a>
       </li>
@@ -36,7 +30,7 @@
   </nav>  
 </div>
 
-<div ui-view></div>
+<div ui-view ng-cloak></div>
   
 </body>
 </html>

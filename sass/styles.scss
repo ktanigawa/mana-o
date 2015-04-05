@@ -54,6 +54,14 @@ h3{
   font-family: 'Roboto Condensed', sans-serif, 400;
 }
 
+h5{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
 #search_menu{
   max-width: 290px;
   margin: auto;
@@ -71,17 +79,32 @@ h3{
   max-width: 350px;
   margin: auto;
   display: block;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
+  height: 50px;
+  background-color: #7e7e7e;
 }
 
-#score_correct{
-
+#score_container>ul>li{
+  display: inline-block;
+  margin: auto;
 }
 
-#score_incorrect{
-  
+.incorrect_title{
+  margin-left: 41px;
 }
 
+.correct_title{
+  margin-left: 22px;
+}
+
+// labels
+div#score_correct{
+  margin-left: 9px;
+}
+
+div#score_incorrect{
+  margin-left: 10px;
+}
 
 .find_button{
   margin-bottom: 20px;
@@ -257,6 +280,10 @@ h3{
 .description{
   font-size: 20px;
 }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+ }
 
 /* Animations */
 [ui-view].ng-enter, [ui-view].ng-leave {
