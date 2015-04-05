@@ -17,10 +17,12 @@ angular
       //     //total_incorrect.reset();
       //   }
       // }
-      // controller : $('#title').click(function($rootScope){
-      //   $rootScope.total_correct = 0;
-      //   $rootScope.total_incorrect = 0;
-      // })
+      controller : function($rootScope,CardService,$scope){
+        $rootScope.total_correct = 0;
+        $rootScope.total_incorrect = 0;
+        var random_card = CardService.randomCard();
+        $scope.firstcard = random_card.name;
+      }
 
 
     })
@@ -49,14 +51,16 @@ angular
     // console.log(CardService);
     // var all_cards = CardService.all();
     // console.log('all_cards',all_cards);
-
+    var random_card = CardService.randomCard();
+    $scope.nextcard = random_card.name;
+    $rootScope.answered = false;
     // check for card's :name param
     // if it doesn't exist, randomize
+    // User should never go to /card
     if($state.params.name === ""){
       var random_card = CardService.randomCard();
 
       $state.go( 'card', { name : random_card.name } );
-      $rootScope.answered = false;
     }
     // if it does exist, get that card
     else{
