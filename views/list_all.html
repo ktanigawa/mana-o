@@ -1,0 +1,19 @@
+
+<div class="ui inverted segment" id="search_menu">
+  <div class="ui large inverted transparent icon input" id="search_box_container">
+    <input type="text" id="search_box" ng-model="search_query" placeholder="Search...">
+    <i class="search icon"></i>
+  </div>
+</div>
+
+<div ng-repeat="definition in definitions | filter : search_query">
+  <div ng-animate="'animate'" ng-repeat="word in definition.options">
+    <div class="ui card" id="card_index">
+      <div class="content">
+        <div class="header">{{ word.title }}</div>
+        <div class="meta"></div>
+        <div class="description">{{ word.definition }}</div>
+      </div>
+    </div>
+  </div>
+</div>

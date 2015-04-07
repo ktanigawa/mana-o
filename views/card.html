@@ -1,0 +1,81 @@
+<div class="ui segment" id="score_container">
+  <ul>
+    <li>
+      <div class="correct_title">
+        <h5>correct</h5>
+      </div>
+    </li>
+    <li>
+      <div class="correct ui black label" id="score_correct">
+      {{total_correct}}
+      </div>
+    </li>
+    <li>
+      <div class="incorrect_title">
+        <h5>incorrect</h5>
+      </div>
+    </li>
+    <li>
+      <div class="incorrect ui black label" id="score_incorrect">
+        {{total_incorrect}}
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<!-- <div class="ui inverted segment" id="score_container">
+  <div class="correct_title">
+    <h4>correct</h4>
+  </div>
+  <div class="correct ui green circular label" id="score_correct">
+    {{total_correct}}
+  </div>
+  <div class="incorrect_title">
+    <h4>incorrect</h4>
+  </div>
+  <div class="incorrect ui red circular label" id="score_incorrect">
+    {{total_incorrect}}
+  </div>
+</div> -->
+
+
+<div class="question_container">
+  <div class="definition_box">
+    <div class="olelo">ʻO ka huaʻōlelo hea ka huaʻōlelo Hawaiʻi pololei no:</div>
+    <div class="meaning">What is the correct Hawaiian word for:</div>
+  </div>
+  <div class="question" id="question_box">
+    <h2>{{card.meaning}}</h2>
+  </div>
+</div>
+
+<div class="choose_box">
+  <div class="olelo">e koho i ka huaʻōlelo hawaiʻi pololei</div>
+  <div class="word">Choose the correct Hawaiian word</div>
+</div>
+
+<div class="ui list" id="cards_box">
+  <div class="ui card" ng-click="userSelectsOption($event, option)" ng-repeat="option in card.options" id="cards">
+    <div class="content">
+        <div class="header">{{ option.title }}</div>
+        <div class="meta"></div>
+        <div class="description animate-show" ng-show="showAnswers">
+          {{ option.definition }}
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="next_button_box animate-show" ng-show="showNextButton">
+ <a class="next_button" ui-sref="card({name: nextcard })">
+    <button class="fluid ui animated button" tabindex="0" id="next_button">
+      <div class="visible content">
+        next mana'o
+      </div>
+      <div class="hidden content">
+        <i class="arrow right icon"></i>
+      </div>
+    </button>
+  </a>
+</div>
