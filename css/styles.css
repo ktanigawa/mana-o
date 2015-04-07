@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  background-image: url(/images/pixel_weave.png);
+  background-image: url(../images/pixel_weave.png);
   color: #050912;
   font-family: 'Roboto Condensed', sans-serif, 400; }
 
@@ -119,7 +119,7 @@ div#score_incorrect {
   box-shadow: 0 3px 0 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   -webkit-transition: box-shadow .2s ease;
   transition: box-shadow .2s ease;
-  background-image: url(/images/witewall_3.png); }
+  background-image: url(../images/witewall_3.png); }
 
 .manao {
   font-weight: 700;
@@ -220,14 +220,14 @@ div#score_incorrect {
 
 .ui.card.correct {
   background-color: #9DE0AD;
-  background-image: url(/images/greencheck.png);
+  background-image: url(../images/greencheck.png);
   background-size: 30px auto;
   background-repeat: no-repeat;
   background-position: 305px 8px; }
 
 .ui.card.incorrect {
   background-color: #EE403D;
-  background-image: url(/images/redx.png);
+  background-image: url(../images/redx.png);
   background-size: 30px auto;
   background-repeat: no-repeat;
   background-position: 305px 10px; }
